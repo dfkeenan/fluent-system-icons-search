@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluent UI System Icons</title>
+    <base href="https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main/">
 
     <!-- The page supports both dark and light color schemes,
          and the page author prefers / default is light. -->
@@ -57,11 +58,11 @@
                     const header = document.querySelector("#" + elementId + " h1");
                     header.remove();
 
-                    document.querySelectorAll("#" + elementId + " img").forEach(function (img) {
-                        const imageUrl = new URL(img.src, window.location.href);
+                    // document.querySelectorAll("#" + elementId + " img").forEach(function (img) {
+                    //     const imageUrl = new URL(img.src, window.location.href);
 
-                        img.src = "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main" + imageUrl.pathname + imageUrl.search;
-                    });
+                    //     img.src = "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main" + imageUrl.pathname + imageUrl.search;
+                    // });
                 }
             };
             xhttp.open("GET", url, true);
