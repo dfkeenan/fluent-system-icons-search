@@ -58,7 +58,7 @@
                     header.remove();
 
                     document.querySelectorAll("#" + elementId + " img").forEach(function (img) {
-                        const imageUrl = new URL(img.src, window.location.origin);
+                        const imageUrl = new URL(img.src, window.location.href);
 
                         img.src = "https://raw.githubusercontent.com/microsoft/fluentui-system-icons/main" + imageUrl.pathname + imageUrl.search;
                     });
